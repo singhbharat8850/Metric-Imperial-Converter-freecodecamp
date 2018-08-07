@@ -1,4 +1,5 @@
-**FreeCodeCamp**- Information Security and Quality Assurance
+My solution to FCC Information Security and Quality Assurance project - Metric-Imperial Converter &nbsp; &nbsp; &nbsp; [DEMO here](https://gregarious-tangerine.glitch.me/)
+**FreeCodeCamp**- Information Security and Quality Assurance   
 ------
 
 1) SET NODE_ENV to `test` without quotes
