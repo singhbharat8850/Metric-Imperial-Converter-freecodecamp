@@ -30,8 +30,9 @@ function ConvertHandler() {
       'KG'
     ];
     var result;
+    var tester = /^[A-Za-z]/
     for (let i = 0; i < arr.length; i++) {
-      if (input.toLowerCase().startsWith(arr[i])) {
+      if (tester.test(input)) {
         result = 1;
         break;
       } else {
@@ -46,8 +47,7 @@ function ConvertHandler() {
           result = "invalid number";
         }
       }
-    }
-    console.log(result);
+    }  
     return result;
   };
 
@@ -101,7 +101,7 @@ function ConvertHandler() {
   };
 
   this.spellOutUnit = function(unit) {
-    var result;
+    var result = '';
     var myUnit = unit.toLowerCase();
     switch (myUnit) {
       case 'gal':
@@ -130,7 +130,7 @@ function ConvertHandler() {
     const galToL = 3.78541;
     const lbsToKg = 0.453592;
     const miToKm = 1.60934;
-    var result;
+    var result = 0;
     var unit = initUnit.toLowerCase();
     switch (unit) {
       case 'gal':
@@ -152,7 +152,7 @@ function ConvertHandler() {
         result = initNum / lbsToKg;
         break;
     }
-    return result.toFixed(5);
+    return Number(result.toFixed(5));
   };
 
   this.getString = function(initNum, initUnit, returnNum, returnUnit) {
